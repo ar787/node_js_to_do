@@ -1,0 +1,45 @@
+
+form {
+    margin: 0px auto;
+    width: 50%;
+    font-family: sans-serif;
+    
+}
+
+.todoHeader {
+    padding: 10px;
+    text-align: center;
+}
+.todoHeader button {
+    background-color: #ccc;
+    padding: 6px;
+    width: 20%;
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+input {
+    width:77%;
+    padding: 5px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    
+    border: 1px solid #ccc;
+    padding: 5px;
+    
+}
+
+
+
+

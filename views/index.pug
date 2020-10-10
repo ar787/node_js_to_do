@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ToDo
+        link(rel="stylesheet", href="/style.css")
+        
+    body
+        
+        form(action="/add_task" method="post") 
+            div(class="todoHeader")
+                h1 To Do List
+                input(type="text" name="value")
+                button(type="submit") Add 
+            ul 
+                each el, index in todos 
+                    li=`${el.value}`
+                        div
+                            button(class="btn waves-effect waves-light" formaction=`/edit_task/${index}` formmethod="get") edit
+                            button(class="btn waves-effect waves-light" formaction=`/remove_task/${index}` formmethod="get") delete  
